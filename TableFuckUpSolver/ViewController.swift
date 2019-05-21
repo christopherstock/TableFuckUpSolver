@@ -36,28 +36,26 @@ class ViewController : UIViewController, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(
             withIdentifier: "MyTableCell",
             for: indexPath
-        )
-
-        let myCell : MyTableCell = cell as! MyTableCell
+        ) as! MyTableCell
 
         switch ( indexPath.item )
         {
             case 0:
-                myCell.myTextView.backgroundColor = UIColor.yellow
-                myCell.myTextView.text = "1st item"
+                cell.myTextView.backgroundColor = UIColor.yellow
+                cell.myTextView.text = "1st item"
 
             case 1:
-                myCell.myTextView.backgroundColor = UIColor.orange
-                myCell.myTextView.text = "2nd item"
+                cell.myTextView.backgroundColor = UIColor.orange
+                cell.myTextView.text = "2nd item"
 
             case 2:
-                myCell.myTextView.backgroundColor = UIColor.red
+                cell.myTextView.backgroundColor = UIColor.red
 
             case 3:
-                myCell.myTextView.backgroundColor = UIColor.blue
+                cell.myTextView.backgroundColor = UIColor.blue
 
             default:
-                myCell.myTextView.backgroundColor = UIColor.green
+                cell.myTextView.backgroundColor = UIColor.green
         }
 
         return cell
