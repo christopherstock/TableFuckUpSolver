@@ -33,26 +33,31 @@ class ViewController : UIViewController, UITableViewDataSource
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let newCell = MyTableCell()
-/*
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "MyTableCell",
+            for: indexPath
+        )
+
+        let myCell : MyTableCell = cell as! MyTableCell
+
         switch ( indexPath.item )
         {
             case 0:
-                newCell.myContentView.backgroundColor = UIColor.yellow
+                myCell.myTextView.backgroundColor = UIColor.yellow
 
             case 1:
-                newCell.myContentView.backgroundColor = UIColor.orange
+                myCell.myTextView.backgroundColor = UIColor.orange
 
             case 2:
-                newCell.myContentView.backgroundColor = UIColor.red
+                myCell.myTextView.backgroundColor = UIColor.red
 
             case 3:
-                newCell.myContentView.backgroundColor = UIColor.blue
+                myCell.myTextView.backgroundColor = UIColor.blue
 
             default:
-                newCell.myContentView.backgroundColor = UIColor.green
+                myCell.myTextView.backgroundColor = UIColor.green
         }
-*/
-        return newCell
+
+        return cell
     }
 }

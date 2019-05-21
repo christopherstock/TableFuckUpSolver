@@ -28,7 +28,7 @@
                                     <color key="backgroundColor" red="1" green="0.22667827130000001" blue="0.061708063100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyTableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xoV-ij-IHk" userLabel="MyTableCell" customClass="MyTableCell" customModule="TableFuckUpSolver" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyTableCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyTableCell" id="xoV-ij-IHk" userLabel="MyTableCell" customClass="MyTableCell" customModule="TableFuckUpSolver" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="384" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xoV-ij-IHk" id="dTs-iz-Dnm">
@@ -52,7 +52,6 @@
                                             <color key="backgroundColor" red="0.1180326434" green="0.051561119449999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="myContentView" destination="dTs-iz-Dnm" id="aK9-2G-FqK"/>
                                             <outlet property="myTextView" destination="tYy-bE-eiB" id="DDQ-hc-9ja"/>
                                         </connections>
                                     </tableViewCell>

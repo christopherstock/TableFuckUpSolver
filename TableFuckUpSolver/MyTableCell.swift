@@ -12,9 +12,10 @@ class MyTableCell : UITableViewCell
 
     func viewDidLoad()
     {
+/*
         print( ">> MyTableCell => viewDidLoad()" )
         print( self.myTextView )
-
+*/
 /*
         myContentView = UIView()
 
