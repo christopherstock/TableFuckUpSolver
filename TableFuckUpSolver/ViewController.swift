@@ -44,9 +44,11 @@ class ViewController : UIViewController, UITableViewDataSource
         {
             case 0:
                 myCell.myTextView.backgroundColor = UIColor.yellow
+                myCell.myTextView.text = "1st item"
 
             case 1:
                 myCell.myTextView.backgroundColor = UIColor.orange
+                myCell.myTextView.text = "2nd item"
 
             case 2:
                 myCell.myTextView.backgroundColor = UIColor.red
